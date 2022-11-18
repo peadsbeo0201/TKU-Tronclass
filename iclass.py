@@ -1,15 +1,6 @@
 import aiohttp
 import asyncio
 
-class iClass:
-    def __init__(self):
-        self.std_id = 'your student id'
-        self.passwd = 'your passwrod'
-        self.sso = SSO(self.std_id, self.passwd)
-        
-    
-    
-    
 class SSO:
     def __init__(self, std_id, passwd, aiohttp_client_session):
         self.reqs = aiohttp_client_session
